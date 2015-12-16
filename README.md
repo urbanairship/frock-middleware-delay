@@ -21,10 +21,10 @@ In your working directory, create a `frockfile.js`:
               "handler": "frock-middleware-delay",
               "options": {
                 "min": 300,
-                "max" 1500
+                "max": 1500
               }
             }
-          ]
+          ],
           "options": {
             "file": "fixtures/static/people.json",
             "contentType": "application/json"
