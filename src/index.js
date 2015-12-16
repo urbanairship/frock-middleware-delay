@@ -1,6 +1,10 @@
-import 'core-js/shim'
+try {
+  require('babel-polyfill')
+} catch (e) {
+  // babel polyfill throws if it's ever included in any other module
+}
 
-export default createDelayMiddleware
+module.exports = createDelayMiddleware
 
 function createDelayMiddleware (frock, logger, _options = {}) {
   const options = Object.assign(
