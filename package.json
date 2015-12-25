@@ -1,6 +1,6 @@
 {
   "name": "frock-middleware-delay",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Delay middleware for frock.",
   "main": "lib/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "tape": "^4.0.0"
   },
   "frock": {
-    "compatible-versions": "0.1.0 - 0.9.*"
+    "compatible-versions": "1.*"
   },
   "babel": {
     "presets": [
