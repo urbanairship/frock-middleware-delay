@@ -34,7 +34,7 @@
     "tape": "^4.0.0"
   },
   "frock": {
-    "compatible-versions": "1.*"
+    "compatible-versions": "^2.0.0"
   },
   "babel": {
     "presets": [
