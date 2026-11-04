@@ -20,13 +20,14 @@
     "url": "https://github.com/urbanairship/frock-middleware-delay/issues"
   },
   "homepage": "https://github.com/urbanairship/frock-middleware-delay#readme",
-  "dependencies": {},
   "devDependencies": {
-    "rimraf": "^2.4.3",
-    "standard": "^11.0.1",
-    "tape": "^4.0.0"
+    "standard": "^17.1.2",
+    "tape": "^5.10.3"
   },
   "frock": {
     "compatible-versions": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
