@@ -26,7 +26,7 @@ test(`setup ${__filename}`, t => {
 test('delays within the expected ranges', t => {
   t.plan(1)
 
-  const handler = lib(null, log, {min: 100, max: 200})
+  const handler = lib(null, log, { min: 100, max: 200 })
 
   const start = Date.now()
 
@@ -54,7 +54,7 @@ test('passes through req and res unchanged', t => {
   const req = {}
   const res = {}
 
-  const handler = lib(null, log, {min: 10, max: 20})
+  const handler = lib(null, log, { min: 10, max: 20 })
 
   handler(req, res, (rq, rs) => {
     /* eslint-disable eqeqeq */
@@ -69,7 +69,7 @@ test('logs delay message', t => {
 
   log.info = msg => t.ok(msg.includes('ms'))
 
-  const handler = lib(null, log, {min: 10, max: 20})
+  const handler = lib(null, log, { min: 10, max: 20 })
 
   handler(null, null, () => t.pass('done'))
 })
